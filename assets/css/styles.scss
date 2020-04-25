@@ -1,0 +1,195 @@
+.hide-on-mobile {
+    display: none;
+}
+
+#navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #82A5FF;
+    height: 50vh;
+    padding: 0;
+
+    .blurb {
+        padding: 10px 30px;
+
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.navbar {
+    background: white;
+    justify-content: left;
+    flex-direction: row-reverse;
+    background-image: url("../nav.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 15px;
+
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    #brand {
+        all: unset;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+        margin: 0;
+    }
+}
+
+.boxes-container {
+    padding: 0;
+
+    .row {
+        margin: 0;
+    }
+}
+
+.content-boxes .header, #links > *, #right-side > * {
+    padding: 13px 30px;
+}
+
+#right-side {
+    padding: 0;
+}
+
+#first-boxes {
+    background-color: #ffd5d3;
+
+    .content-boxes .header {
+        background-color: #f4c2bd;
+
+        h5 {
+            margin: 0;
+        }
+    }
+}
+
+#second-boxes {
+    background-color: #e0ffd1;
+
+    .content-boxes .header {
+        background-color: #c7f0af;
+        width: 100%;
+
+        h5 {
+            margin: 0;
+        }
+    }
+}
+
+// This applies from 960px onwards
+@media (min-width: 960px) {
+    .hide-on-desktop {
+        display: none;
+    }
+
+    .hide-on-mobile {
+        display: block;
+    }
+
+    .content-boxes .header, #links > *, #right-side > * , #expertise, #partnerships {
+        padding: 40px 60px;
+    }
+
+    #navbar-container {
+        height: 100vh;
+
+        .blurb {
+            padding: 40px 60px;
+            height: 50%;
+            width: 60%;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+    
+    .navbar {
+        padding: 40px 60px; 
+        background: transparent;
+        flex-direction: row;
+        align-items: baseline;
+
+        a {
+            font-size: 1rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            margin-right: 60px;
+        }
+    }
+
+    .boxes-container {
+
+        h4 {
+            font-size: 2rem;
+        }
+    }
+
+    #first-boxes .col-lg-6:first-child, #second-boxes > h4 {
+        background-color: transparent;
+    }
+
+    #first-boxes .content-boxes .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #second-boxes .content-boxes .header {
+        background-color: transparent;
+    }
+
+    .link-icon a {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 30%;
+            margin: 20px;
+            margin-bottom: 40px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #links > * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #expertise {
+        background-color: #C5F2F4;
+
+        h5 {
+            margin-bottom: 200px;
+        }
+
+        p {
+            width: 50%;
+        }
+    }
+
+    #partnerships {
+        .link-icon {
+            width: 20%;
+        }
+
+        h5 {
+            margin-bottom: 30px;
+        }
+    }
+}

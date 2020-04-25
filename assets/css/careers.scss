@@ -1,0 +1,48 @@
+#navbar-container {
+    .blurb {
+        width: 100%;
+        height: auto;
+    }
+}
+
+// This applies from 960px onwards
+@media (min-width: 960px) {
+
+    #first-boxes {
+        .header {
+            padding: 20px 60px;
+        }
+    }
+    
+    .quote {
+        padding: 40px 60px;
+        align-items: center;
+        justify-content: space-between;
+    
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            img {
+                height: 200px;
+                margin: 20px 40px;
+            }
+        
+            p {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    
+        p {
+            width: 60%;
+            text-align: center;
+        }
+    }
+    
+    #second-quote {
+        flex-direction: row-reverse;
+        background-color: #f4c2bd;
+    }
+}

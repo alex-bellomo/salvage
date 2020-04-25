@@ -1,0 +1,50 @@
+#navbar-container .blurb {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 960px) {
+  #first-boxes .header {
+    padding: 20px 60px;
+  }
+  .quote {
+    padding: 40px 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .quote .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .quote .profile img {
+    height: 200px;
+    margin: 20px 40px;
+  }
+  .quote .profile p {
+    width: 100%;
+    margin: 0;
+  }
+  .quote p {
+    width: 60%;
+    text-align: center;
+  }
+  #second-quote {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    background-color: #f4c2bd;
+  }
+}
