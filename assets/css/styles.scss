@@ -2,30 +2,32 @@
     display: none;
 }
 
+.divider img {
+    display: block;
+    max-width: 100%;
+    height: 5px;
+}
+
 #navbar-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #82A5FF;
+    background: lightblue;
     height: 50vh;
     padding: 0;
+}
 
-    .blurb {
-        padding: 10px 30px;
+.blurb {
+    padding: 10px 30px;
 
-        h2 {
-            font-size: 1.25rem;
-        }
+    h2 {
+        font-size: 1.25rem;
     }
 }
 
 .navbar {
-    background: white;
     justify-content: left;
     flex-direction: row-reverse;
-    background-image: url("../nav.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
     padding-bottom: 15px;
 
     .navbar-toggler {
@@ -72,15 +74,23 @@
 }
 
 #second-boxes {
-    background-color: #e0ffd1;
-
     .content-boxes .header {
-        background-color: #c7f0af;
         width: 100%;
 
         h5 {
             margin: 0;
         }
+    }
+}
+
+#footer {
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        color: grey;
+        font-size: .75rem;
     }
 }
 
@@ -100,21 +110,23 @@
 
     #navbar-container {
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+    }
 
-        .blurb {
-            padding: 40px 60px;
-            height: 50%;
-            width: 60%;
+    .blurb {
+        padding-top: 35vh;
+        padding-left: 50%;
 
-            h2 {
-                font-size: 3rem;
-            }
+        h2 {
+            font-size: 2.5rem;
         }
     }
     
     .navbar {
         padding: 40px 60px; 
-        background: transparent;
+        background: white;
         flex-direction: row;
         align-items: baseline;
 
@@ -123,7 +135,7 @@
         }
 
         h3 {
-            font-size: 1.75rem;
+            font-size: 1.25rem;
             margin-right: 60px;
         }
     }

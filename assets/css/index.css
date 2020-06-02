@@ -1,0 +1,29 @@
+#first-boxes .header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(183, 203, 255, 0.7))), url("../home-barge-services.jpg");
+  background-image: linear-gradient(rgba(183, 203, 255, 0.7)), url("../home-barge-services.jpg");
+  background-position: center;
+}
+
+#terminal-services {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 245, 212, 0.8))), url("../home-terminal-services.jpg");
+  background-image: linear-gradient(rgba(227, 245, 212, 0.8)), url("../home-terminal-services.jpg");
+  background-position: center;
+}
+
+#industrial-services {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(189, 113, 107, 0.2))), url("../home-industrial-services.jpg");
+  background-image: linear-gradient(rgba(189, 113, 107, 0.2)), url("../home-industrial-services.jpg");
+  background-position: center;
+}
+
+#second-boxes {
+  background: white;
+}
+
+#expertise {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3))), url("../home-expertise.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3)), url("../home-expertise.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

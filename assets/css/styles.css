@@ -2,6 +2,12 @@
   display: none;
 }
 
+.divider img {
+  display: block;
+  max-width: 100%;
+  height: 5px;
+}
+
 #navbar-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,21 +19,20 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #82A5FF;
+  background: lightblue;
   height: 50vh;
   padding: 0;
 }
 
-#navbar-container .blurb {
+.blurb {
   padding: 10px 30px;
 }
 
-#navbar-container .blurb h2 {
+.blurb h2 {
   font-size: 1.25rem;
 }
 
 .navbar {
-  background: white;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -35,9 +40,6 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  background-image: url("../nav.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
   padding-bottom: 15px;
 }
 
@@ -83,17 +85,27 @@
   margin: 0;
 }
 
-#second-boxes {
-  background-color: #e0ffd1;
-}
-
 #second-boxes .content-boxes .header {
-  background-color: #c7f0af;
   width: 100%;
 }
 
 #second-boxes .content-boxes .header h5 {
   margin: 0;
+}
+
+#footer {
+  padding: 10px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer span {
+  color: grey;
+  font-size: .75rem;
 }
 
 @media (min-width: 960px) {
@@ -108,18 +120,27 @@
   }
   #navbar-container {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
   }
-  #navbar-container .blurb {
-    padding: 40px 60px;
-    height: 50%;
-    width: 60%;
+  .blurb {
+    padding-top: 35vh;
+    padding-left: 50%;
   }
-  #navbar-container .blurb h2 {
-    font-size: 3rem;
+  .blurb h2 {
+    font-size: 2.5rem;
   }
   .navbar {
     padding: 40px 60px;
-    background: transparent;
+    background: white;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -132,7 +153,7 @@
     font-size: 1rem;
   }
   .navbar h3 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     margin-right: 60px;
   }
   .boxes-container h4 {

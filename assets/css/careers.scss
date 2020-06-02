@@ -1,7 +1,7 @@
 #navbar-container {
     .blurb {
-        width: 100%;
-        height: auto;
+        padding: 40px 60px;
+        margin-top: auto;
     }
 }
 
@@ -39,10 +39,5 @@
             width: 60%;
             text-align: center;
         }
-    }
-    
-    #second-quote {
-        flex-direction: row-reverse;
-        background-color: #f4c2bd;
     }
 }
