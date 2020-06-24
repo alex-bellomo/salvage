@@ -1,0 +1,24 @@
+#navbar-container .blurb {
+  padding: 40px 60px;
+  margin-top: auto;
+}
+
+@media (min-width: 960px) {
+  #first-boxes .header {
+    padding: 20px 60px;
+  }
+  .employee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 4px solid #F5BA25;
+    padding: 20px;
+  }
+  .employee img {
+    height: 100px;
+    margin: 20px 40px;
+  }
+}

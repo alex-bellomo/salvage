@@ -1,0 +1,29 @@
+#navbar-container {
+    .blurb {
+        padding: 40px 60px;
+        margin-top: auto;
+    }
+}
+
+// This applies from 960px onwards
+@media (min-width: 960px) {
+
+    #first-boxes {
+        .header {
+            padding: 20px 60px;
+        }
+    }
+    
+    .employee {
+        display: flex;
+        align-items: center;
+        border-top: 4px solid #F5BA25;
+        padding: 20px;
+
+        img {
+            height: 100px;
+            margin: 20px 40px;
+        }
+
+    }
+}
