@@ -3,6 +3,10 @@
   margin-top: auto;
 }
 
+.popout {
+  display: none;
+}
+
 #quote-box {
   padding: 40px 60px;
 }
@@ -12,8 +16,14 @@
 }
 
 #quote-box button {
-  margin: 0 auto;
+  background: white;
+  font-weight: bold;
+  border: 3px solid #f5ba25;
+  font-size: 1.25rem;
+  padding: 5px 10px;
   display: block;
+  margin: 0 auto;
+  outline: none;
 }
 
 .service-box {
@@ -50,7 +60,7 @@
   width: 100%;
 }
 
-.service-list .list-item {
+.service-list .list-item span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,9 +70,10 @@
   padding: 3px 0px;
   margin: 15px 0px;
   border-bottom: 2px solid black;
+  cursor: pointer;
 }
 
-.service-list .list-item img {
+.service-list .list-item span img {
   width: 20px;
 }
 

@@ -5,6 +5,10 @@
     }
 }
 
+.popout { 
+    display: none;
+}
+
 #quote-box {
     padding: 40px 60px;
 
@@ -13,8 +17,14 @@
     }
 
     button {
-        margin: 0 auto;
+        background: white;
+        font-weight: bold;
+        border: 3px solid #f5ba25;
+        font-size: 1.25rem;
+        padding: 5px 10px;
         display: block;
+        margin: 0 auto;
+        outline: none;
     }
 }
 
@@ -44,12 +54,13 @@
         width: 100%;
     }
 
-    .list-item {
+    .list-item span {
         display: flex;
         justify-content: space-between;
         padding: 3px 0px;
         margin: 15px 0px;
         border-bottom: 2px solid black;
+        cursor: pointer;
 
         img {
             width: 20px;
