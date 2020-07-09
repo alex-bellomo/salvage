@@ -9,6 +9,20 @@
     display: none;
 }
 
+.quote {
+    text-align: right;
+    margin-top: 10px;
+
+    a {
+        color:rgba(0,0,0,.5);
+        text-decoration: underline;
+
+        &:hover {
+            color:rgba(0,0,0,.6);
+        }
+    }
+}
+
 #quote-box {
     padding: 40px 60px;
 
@@ -54,16 +68,37 @@
         width: 100%;
     }
 
-    .list-item span {
-        display: flex;
-        justify-content: space-between;
+    .list-item {
         padding: 3px 0px;
         margin: 15px 0px;
-        border-bottom: 2px solid black;
-        cursor: pointer;
 
-        img {
-            width: 20px;
+        span {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+
+            img {
+                width: 20px;
+
+                &.minus {
+                    display: none;
+                }
+            }
+        }
+
+        .popout {
+            padding-top: 10px;
+        }
+
+        &.active {
+            .plus {
+                display: none;
+            }
+
+            .minus {
+                display: block;
+            }
         }
     }
 }
@@ -90,6 +125,10 @@
             img {
                 width: 75px;
             }
+        }
+
+        .service {
+            width: 100%;
         }
     }
 
