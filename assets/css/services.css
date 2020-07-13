@@ -54,6 +54,14 @@
           flex-direction: column;
 }
 
+.service-box .content .header {
+  border: none;
+}
+
+.service-box .header {
+  border-bottom: 4px solid black;
+}
+
 .service-list {
   width: 100%;
   display: -webkit-box;
