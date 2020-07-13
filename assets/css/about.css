@@ -2,3 +2,16 @@
   padding: 40px 60px;
   margin-top: auto;
 }
+
+#timeline-box {
+  padding: 40px 60px;
+}
+
+#timeline-box .header {
+  padding: 30px 0;
+}
+
+#timeline-box span {
+  font-weight: bold;
+  padding-right: 20px;
+}

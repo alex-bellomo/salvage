@@ -14,11 +14,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-top: 4px solid #F5BA25;
+    border-top: 8px solid #F5BA25;
     padding: 20px;
   }
   .employee img {
-    height: 100px;
+    height: 150px;
     margin: 20px 40px;
+    border-radius: 5px;
   }
 }
