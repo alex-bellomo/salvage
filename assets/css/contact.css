@@ -16,6 +16,8 @@
   text-align: center;
 }
 
-#contact-form .form-row {
-  padding: 20px 90px;
+@media (min-width: 960px) {
+  #contact-form .form-row {
+    padding: 20px 90px;
+  }
 }

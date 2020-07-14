@@ -41,7 +41,7 @@
 }
 
 .service-box {
-  padding: 40px 60px;
+  padding: 20px 20px;
 }
 
 .service-box .content {
@@ -60,6 +60,7 @@
 
 .service-box .header {
   border-bottom: 4px solid black;
+  margin-bottom: 10px;
 }
 
 .service-list {
@@ -67,7 +68,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 40px;
 }
 
 .service-list .service-list-icon {
@@ -118,7 +118,18 @@
   display: block;
 }
 
+.service-entry-icon {
+  padding-right: 20px;
+}
+
+.service-entry-icon img {
+  display: none;
+}
+
 @media (min-width: 960px) {
+  .service-box {
+    padding: 40px 60px;
+  }
   .service-box .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -128,6 +139,7 @@
   }
   .service-list {
     width: 50%;
+    margin: 0px 40px;
   }
   .service-box .service-entry {
     display: -webkit-box;
@@ -136,13 +148,14 @@
     margin: 0px 40px;
     width: 50%;
   }
-  .service-box .service-entry .service-entry-icon {
-    padding-right: 20px;
-  }
-  .service-box .service-entry .service-entry-icon img {
-    width: 75px;
-  }
   .service-box .service-entry .service {
     width: 100%;
+  }
+  .service-entry-icon {
+    padding-right: 20px;
+  }
+  .service-entry-icon img {
+    display: block;
+    width: 75px;
   }
 }

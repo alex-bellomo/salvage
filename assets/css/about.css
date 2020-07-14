@@ -1,10 +1,5 @@
-#navbar-container .blurb {
-  padding: 40px 60px;
-  margin-top: auto;
-}
-
 #timeline-box {
-  padding: 40px 60px;
+  padding: 10px 30px;
 }
 
 #timeline-box .header {
@@ -14,4 +9,14 @@
 #timeline-box span {
   font-weight: bold;
   padding-right: 20px;
+}
+
+@media (min-width: 960px) {
+  #navbar-container .blurb {
+    padding: 40px 60px;
+    margin-top: auto;
+  }
+  #timeline-box {
+    padding: 40px 60px;
+  }
 }

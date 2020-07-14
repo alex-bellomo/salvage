@@ -24,23 +24,18 @@
   padding: 0;
 }
 
-.blurb {
+#navbar-container .blurb {
+  margin-top: auto;
   padding: 10px 30px;
 }
 
-.blurb h2 {
+#navbar-container .blurb h2 {
   font-size: 1.25rem;
 }
 
 .navbar {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   padding-bottom: 15px;
+  background: white;
 }
 
 .navbar .navbar-toggler {
@@ -55,6 +50,11 @@
 .navbar h3 {
   font-size: 1.15rem;
   margin: 0;
+  display: none;
+}
+
+.navbar img {
+  width: 75px;
 }
 
 .boxes-container {
@@ -94,13 +94,18 @@
 }
 
 #footer {
-  padding: 10px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  text-align: center;
 }
 
 #footer span {
@@ -131,16 +136,15 @@
         -ms-flex-pack: normal;
             justify-content: normal;
   }
-  .blurb {
-    padding-top: 35vh;
+  #navbar-container .blurb {
     padding-left: 50%;
+    margin-bottom: 30px;
   }
-  .blurb h2 {
+  #navbar-container .blurb h2 {
     font-size: 2.5rem;
   }
   .navbar {
     padding: 40px 60px;
-    background: white;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -155,6 +159,10 @@
   .navbar h3 {
     font-size: 1.25rem;
     margin-right: 60px;
+    display: block;
+  }
+  .navbar img {
+    display: none;
   }
   .boxes-container h4 {
     font-size: 2rem;
@@ -216,5 +224,12 @@
   }
   #partnerships h5 {
     margin-bottom: 30px;
+  }
+  #footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px 100px;
   }
 }

@@ -15,20 +15,20 @@
     background: lightblue;
     height: 50vh;
     padding: 0;
-}
 
-.blurb {
-    padding: 10px 30px;
+    .blurb {
+        margin-top: auto;
+        padding: 10px 30px;
 
-    h2 {
-        font-size: 1.25rem;
+        h2 {
+            font-size: 1.25rem;
+        }
     }
 }
 
 .navbar {
-    justify-content: left;
-    flex-direction: row-reverse;
     padding-bottom: 15px;
+    background: white;
 
     .navbar-toggler {
         margin-right: 15px;
@@ -42,6 +42,11 @@
     h3 {
         font-size: 1.15rem;
         margin: 0;
+        display: none;
+    }
+
+    img {
+        width: 75px;
     }
 }
 
@@ -84,9 +89,11 @@
 }
 
 #footer {
-    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
 
     span {
         color: grey;
@@ -113,20 +120,19 @@
         display: flex;
         flex-direction: column;
         justify-content: normal;
-    }
 
-    .blurb {
-        padding-top: 35vh;
-        padding-left: 50%;
+        .blurb {
+            padding-left: 50%;
+            margin-bottom: 30px;
 
-        h2 {
-            font-size: 2.5rem;
+            h2 {
+                font-size: 2.5rem;
+            }
         }
     }
     
     .navbar {
         padding: 40px 60px; 
-        background: white;
         flex-direction: row;
         align-items: baseline;
 
@@ -137,6 +143,11 @@
         h3 {
             font-size: 1.25rem;
             margin-right: 60px;
+            display: block;
+        }
+
+        img {
+            display: none;
         }
     }
 
@@ -203,5 +214,10 @@
         h5 {
             margin-bottom: 30px;
         }
+    }
+
+    #footer {
+        flex-direction: row;
+        padding: 10px 100px;
     }
 }

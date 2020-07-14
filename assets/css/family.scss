@@ -1,8 +1,13 @@
-#navbar-container {
-    .blurb {
-        padding: 40px 60px;
-        margin-top: auto;
+.employee {
+    display: flex;
+    align-items: center;
+    border-top: 8px solid #F5BA25;
+    padding: 10px 30px;
+
+    img {
+        display: none;
     }
+
 }
 
 // This applies from 960px onwards
@@ -13,18 +18,15 @@
             padding: 20px 60px;
         }
     }
-    
+
     .employee {
-        display: flex;
-        align-items: center;
-        border-top: 8px solid #F5BA25;
-        padding: 20px;
+        padding: 40px 60px;
 
         img {
+            display: block;
             height: 150px;
             margin: 20px 40px;
             border-radius: 5px;
         }
-
     }
 }

@@ -1,9 +1,7 @@
-#navbar-container .blurb {
-  padding: 40px 60px;
-  margin-top: auto;
-}
-
 @media (min-width: 960px) {
+  #navbar-container .blurb {
+    padding: 40px 60px;
+  }
   #first-boxes .header {
     padding: 20px 60px;
   }

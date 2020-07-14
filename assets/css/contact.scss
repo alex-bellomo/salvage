@@ -16,10 +16,9 @@
     }
 }
 
-#contact-form .form-row {
-    padding: 20px 90px;
-}
-
 // This applies from 960px onwards
 @media (min-width: 960px) {
+    #contact-form .form-row {
+        padding: 20px 90px;
+    }
 }

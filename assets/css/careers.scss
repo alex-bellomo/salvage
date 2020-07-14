@@ -1,12 +1,10 @@
-#navbar-container {
-    .blurb {
-        padding: 40px 60px;
-        margin-top: auto;
-    }
-}
-
 // This applies from 960px onwards
 @media (min-width: 960px) {
+    #navbar-container {
+        .blurb {
+            padding: 40px 60px;
+        }
+    }
 
     #first-boxes {
         .header {
