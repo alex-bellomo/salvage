@@ -1,6 +1,7 @@
 #first-boxes .header {
     background-image: linear-gradient(rgba(183,203,255,.7)), url("../home-barge-services.jpg");
     background-position: center;
+    background-color: red;
 }
 
 #terminal-services {
@@ -18,8 +19,28 @@
 }
 
 #expertise {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3)), url("../home-expertise.jpg");
+    background-image: url("../home-more.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+
+#navbar-container {
+  background-image: url("../home-landscape.JPG");
+  background-size: cover;
+  background-position: center;
+
+  .blurb {
+    color: white;
+  }
+}
+
+#first-boxes .col-lg-6:first-child {
+    background: url("../home-service-box.JPG");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
 }

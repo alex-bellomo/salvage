@@ -9,26 +9,17 @@
 }
 
 #navbar-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   background: lightblue;
   height: 50vh;
   padding: 0;
 }
-
 #navbar-container .blurb {
   margin-top: auto;
   padding: 10px 30px;
 }
-
 #navbar-container .blurb h2 {
   font-size: 1.25rem;
 }
@@ -37,22 +28,19 @@
   padding-bottom: 15px;
   background: white;
 }
-
 .navbar .navbar-toggler {
   margin-right: 15px;
 }
-
 .navbar #brand {
+  color: black;
   all: unset;
   cursor: pointer;
 }
-
 .navbar h3 {
   font-size: 1.15rem;
   margin: 0;
   display: none;
 }
-
 .navbar img {
   width: 75px;
 }
@@ -60,7 +48,6 @@
 .boxes-container {
   padding: 0;
 }
-
 .boxes-container .row {
   margin: 0;
 }
@@ -73,14 +60,9 @@
   padding: 0;
 }
 
-#first-boxes {
-  background-color: #ffd5d3;
-}
-
 #first-boxes .content-boxes .header {
   background-color: #f4c2bd;
 }
-
 #first-boxes .content-boxes .header h5 {
   margin: 0;
 }
@@ -88,53 +70,40 @@
 #second-boxes .content-boxes .header {
   width: 100%;
 }
-
 #second-boxes .content-boxes .header h5 {
   margin: 0;
 }
 
 #footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 20px;
   text-align: center;
 }
-
 #footer span {
   color: grey;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 960px) {
   .hide-on-desktop {
     display: none;
   }
+
   .hide-on-mobile {
     display: block;
   }
+
   .content-boxes .header, #links > *, #right-side > *, #expertise, #partnerships {
     padding: 40px 60px;
   }
+
   #navbar-container {
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    flex-direction: column;
+    justify-content: normal;
   }
   #navbar-container .blurb {
     padding-left: 50%;
@@ -143,15 +112,11 @@
   #navbar-container .blurb h2 {
     font-size: 2.5rem;
   }
+
   .navbar {
     padding: 40px 60px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    flex-direction: row;
+    align-items: baseline;
   }
   .navbar a {
     font-size: 1rem;
@@ -164,27 +129,25 @@
   .navbar img {
     display: none;
   }
+
   .boxes-container h4 {
     font-size: 2rem;
   }
+
   #first-boxes .col-lg-6:first-child, #second-boxes > h4 {
     background-color: transparent;
   }
+
   #first-boxes .content-boxes .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
   #second-boxes .content-boxes .header {
     background-color: transparent;
   }
+
   .link-icon a {
     display: block;
     width: 100%;
@@ -198,18 +161,13 @@
   .link-icon a:focus {
     outline: none;
   }
+
   #links > * {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   #expertise {
     background-color: #C5F2F4;
   }
@@ -219,17 +177,18 @@
   #expertise p {
     width: 50%;
   }
+
   #partnerships .link-icon {
     width: 20%;
   }
   #partnerships h5 {
     margin-bottom: 30px;
   }
+
   #footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding: 10px 100px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
