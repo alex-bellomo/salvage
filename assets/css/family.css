@@ -1,7 +1,6 @@
 .employee {
   display: flex;
   align-items: center;
-  border-top: 8px solid #F5BA25;
   padding: 10px 30px;
 }
 .employee img {
